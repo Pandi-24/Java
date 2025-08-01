@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int c = sc.nextInt();
+    int d = sc.nextInt();
+    int e = sc.nextInt();
+    int f = sc.nextInt();
+    int square = a*a;
+    int rectangle = b*c;
+    double circle = Math.PI*d*d;
+    double triangle = 0.5*e*f;
+    System.out.println("Area of Square="+square);
+    System.out.println("Area of Rectangle="+rectangle);
+    System.out.printf("Area of Circle=%.2f\n",Math.floor(circle*100)/100);
+    System.out.println("Area of Triangle="+(int)triangle);
+
+
+    }
+}
