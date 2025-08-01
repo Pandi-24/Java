@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    float m = sc.nextFloat();
+    char s = sc.next().charAt(0);
+    String t = sc.next();
+    sc.nextLine();
+    String u = sc.nextLine();
+    System.out.println("Integer is "+n);
+    System.out.println("Float is "+m);
+    System.out.println("Character is "+s);
+    System.out.println("Strings are "+t+" and "+u);
+    }
+}
