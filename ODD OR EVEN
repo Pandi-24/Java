@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int i = sc.nextInt();
+    int j = sc.nextInt();
+    float evensum = 0;
+    float oddsum = 0;
+    if(i<=1||j>=100||i>=j){
+        System.out.println("Invalid Input");
+        return;
+    }
+        for(int k=i;k<=j;k++){
+            if(k%2==0){
+                evensum+=k;
+            }
+            else{
+                oddsum+=k;
+            }
+        }
+        System.out.printf("The Even Sum value is %.2f\n",evensum);
+        System.out.printf("The Odd Sum value is %.2f",oddsum);
+
+    
+    }
+}
