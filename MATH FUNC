@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+    Scanner sc = new Scanner(System.in);
+    float value = sc.nextFloat();
+    int sqrt = sc.nextInt();
+    int base = sc.nextInt();
+    int power = sc.nextInt();
+    System.out.println((int)Math.floor(value));
+    System.out.println((int)Math.ceil(value));
+    System.out.println(Math.round(value));
+    System.out.println((int)Math.sqrt(sqrt));
+    System.out.println((int)Math.pow(base,power));
+    
+    }
+}
