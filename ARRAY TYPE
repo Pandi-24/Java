@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sc =new Scanner(System.in);
+    int size = sc.nextInt();
+    int[] num = new int[size];
+    for(int i=0;i<size;i++){
+    num[i]=sc.nextInt();
+    }
+        boolean haseven=false;
+        boolean hasodd=false;
+    for(int i=0;i<size;i++){
+        
+    if(num[i]%2==0){
+        haseven=true;
+    }
+    else{
+        hasodd=true;
+    }
+    }
+    if(haseven && hasodd){
+        System.out.println("Mixed");
+    }
+    else if(haseven){
+        System.out.println("Even");
+    }
+    else{
+        System.out.println("Odd");
+    }
+    }
+    
+}
