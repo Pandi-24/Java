@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sc =new Scanner(System.in);
+    int n = sc.nextInt();
+    if(n<=1 || n>9){
+        System.out.println("Invalid Input");
+        return;
+    }
+    long square =(long) n*n;
+    String num = String.valueOf(n);
+    String squarestr = String.valueOf(square);
+    
+    if(squarestr.endsWith(num)){
+        System.out.println("The Number "+n+".0 is Automorphic Number");
+    }
+    else{
+        System.out.println("The Number "+n+".0 is Not Automorphic Number");
+    }
+    }
+}
